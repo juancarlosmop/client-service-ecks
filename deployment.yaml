@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-eks
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: client-eks
+  template:
+    metadata:
+      labels:
+        app: client-eks
+    spec:
+      containers:
+        - name: client-eks
+          image: $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/client-eks:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-eks-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: client-eks
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

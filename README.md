@@ -1,4 +1,4 @@
-# kinesis-microservice
+# Microservice Client deployed on AWS ECS with Fargate
 This proyect is a microservice calle client have a full Api Rest with the best practice
 
 The proyect was deployed in aws to practice the concepts learned in a course of udemy

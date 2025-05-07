@@ -1,11 +1,16 @@
 # kinesis-microservice
-This proyect provide as evidence screen shoots a proyect made and deployed using ECR,ECS,FARGATE. 
+This proyect is a microservice calle client have a full Api Rest with the best practice
+
+The proyect was deployed in aws to practice the concepts learned in a course of udemy
+(Deploy Spring Boot Microservices on AWS ECS with Fargate)
+
+This proyect has evidence screen shoots a proyect made and deployed using ECR,ECS,FARGATE. 
 
 ## 🚀 THECHNOLOGIES AND  SERVICES 
 
 - **AWS ECR** – To host the Docker image of the microservice.
 - **AWS ECS + Fargate** – Para desplegar contenedores sin administrar servidores.
-- - **Code Pipe Line** – Para desplegar contenedores sin administrar servidores.
+- **Code Pipe Line** – Para desplegar contenedores sin administrar servidores.
 - **Spring Boot** – RESTful microservice.
 - **Docker** – Service containerization.
 

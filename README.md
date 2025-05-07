@@ -14,6 +14,16 @@ This proyect has evidence screen shoots a proyect made and deployed using ECR,EC
 - **Spring Boot** – RESTful microservice.
 - **Docker** – Service containerization.
 
+## 🚀 Build and Run the Application with Docker
+
+### 1. Compile the Java applicatio
+mvn clean package
+
+docker build -t client-eks .
+
+docker run -p 8080:8080 client-eks
+
+
 ## ✅ Evidence
 ### 1. ECR Image
 ![image](https://github.com/user-attachments/assets/56daf282-2fbe-452c-b3a5-6c46fe1897fd)

@@ -1,24 +1,24 @@
 # Microservice Client deployed on AWS ECS with Fargate
-This proyect is a microservice calle client have a full Api Rest with the best practice
+This project is a microservice called Client that exposes a full REST API, following best practices.
 
-The proyect was deployed in aws to practice the concepts learned in a course of udemy
-(Deploy Spring Boot Microservices on AWS ECS with Fargate)
+The project was deployed on AWS to practice the concepts learned in the Udemy course: Deploy Spring Boot Microservices on AWS ECS with Fargate.
 
-This proyect has evidence screen shoots a proyect made and deployed using ECR,ECS,FARGATE. 
+This project includes evidence with screenshots showing the deployment process using ECR, ECS, and Fargate.
 
 ## 🚀 THECHNOLOGIES AND  SERVICES 
 
-- **AWS ECR** – To host the Docker image of the microservice.
-- **AWS ECS + Fargate** – Para desplegar contenedores sin administrar servidores.
-- **Code Pipe Line** – Para desplegar contenedores sin administrar servidores.
-- **Spring Boot** – RESTful microservice.
-- **Docker** – Service containerization.
+- **AWS ECR** –  Hosts the Docker image of the microservice.
+- **AWS ECS + Fargate** – Deploys containers without managing servers.
+- **Code Pipe Line** – Automates container deployment.
+- **Spring Boot** – RESTful microservice framework.
+- **Docker** – Containerization of the service.
 
 ## 🛠️ Build and Run with Docker
+**Package the application:**
 mvn clean package
-
+**Build the Docker image::**
 docker build -t client-eks .
-
+**Run the Docker container:**
 docker run -p 8080:8080 client-eks
 
 

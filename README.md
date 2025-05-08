@@ -14,11 +14,11 @@ This project includes evidence with screenshots showing the deployment process u
 - **Docker** – Containerization of the service.
 
 ## 🛠️ Build and Run with Docker
-**Package the application:**
+# Package the application:
 mvn clean package
-**Build the Docker image::**
+# Build the Docker image:
 docker build -t client-eks .
-**Run the Docker container:**
+# Run the Docker container:
 docker run -p 8080:8080 client-eks
 
 
